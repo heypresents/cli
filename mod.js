@@ -13,6 +13,11 @@ import {
 const rootUrl = 'https://heypresents.com/';
 const talksUrl = `${rootUrl}/talks/`;
 
+// rest here a while
+const sleep = (ms) => {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+};
+
 // Fetch a bunch of talks from the web
 // and extract their titles and urls
 const gatherTalks = async () => {
@@ -41,11 +46,6 @@ const gatherTalks = async () => {
   });
 };
 
-
-// rest here a while
-const sleep = (ms) => {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-};
 
 // Offer a random selection of nuggets to explore
 const offerTalks = async () => {
@@ -88,8 +88,8 @@ const main = async () => {
   👋 Hey!
   `);
   intro(color.yellow(color.inverse(' Hey Presents, All Day Hey! ')));
-  log.info(`All Day Hey 2026 is coming!\nWant to explore some of the previous talks from All Day Hey?`);
-  await sleep(1000);
+  log.info(`All Day Hey 2026 is coming!\nShall we explore some of the previous talks from All Day Hey?`);
+  await sleep(500);
   offerTalks();
 };
 
