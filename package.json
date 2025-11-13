@@ -1,7 +1,7 @@
 {
-  "name": "hey",
-  "version": "1.0.0",
-  "description": "",
+  "name": "alldayhey",
+  "version": "0.0.1",
+  "description": "A CLI to explore All Day Hey! conference info and talks.",
   "main": "index.js",
   "type": "module",
   "scripts": {
