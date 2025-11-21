@@ -1,9 +1,12 @@
 {
   "name": "alldayhey",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A CLI to explore All Day Hey! conference info and talks.",
   "main": "mod.js",
   "type": "module",
+  "bin": {  
+    "alldayhey": "mod.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
